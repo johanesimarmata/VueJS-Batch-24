@@ -1,0 +1,4 @@
+Pengalaman Programming:
+Saya kenal programming sejak masuk kuliah yang berada di bidang IT juga. Sejak kenal dunia programming, bahasa pemrograman ,framework/library, atau tools 
+yang pernah saya pelajari adalah python, flask, django, html, css, java, spring boot, javafx, javascript, react, bootstrap, ajax, dan postgresql. 
+Sebelumnya juga saya pernah mengikuti bootcamp di sanbercode juga yaitu data science dan reactjs.
