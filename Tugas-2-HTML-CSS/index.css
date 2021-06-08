@@ -1,0 +1,53 @@
+.container{
+    margin-top: 5rem;
+    display: flex;
+    @media screen and (max-width:1000px){
+        flex-direction: column;
+        .left-content{
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+.left-content{
+    width: 100%;
+}
+
+.left-content img{
+    width: 95%;
+    object-fit: cover;
+}
+
+.right-content{
+    width: 100%;
+}
+
+.right-content h4{
+    font-size: 2rem;
+    color: var(--white-color);
+}
+
+.right-content h4 span{
+    font-size: 2rem;
+}
+
+.right-content .paragraph{
+    padding: 1rem 0;
+}
+
+.right-content .about-info{
+    display: flex;
+    padding-bottom: 1.4rem;
+}
+
+.right-content .about-info .info-title{
+    padding-right: 3rem;
+}
+
+.right-content .about-info .info-title p {
+    font-weight: 600;
+}
+
+.right-content .info-title p, .info p{
+    padding: .3rem 0;
+}
