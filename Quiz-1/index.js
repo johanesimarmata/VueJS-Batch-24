@@ -45,3 +45,20 @@ var tanggal = 31
 var bulan = 12
 var tahun = 2020
 console.log(next_date(tanggal, bulan, tahun))
+
+function jumlah_kata(kalimat){
+    var arrayKata = kalimat.split(' ')
+    var result = 0
+    arrayKata.forEach(element => {
+        if(element != ""){
+            result++
+        }
+    });
+    return result
+}
+
+var kalimat_1 = " Halo nama saya Muhammad Iqbal Mubarok "
+var kalimat_2 = "Saya Iqbal"
+
+console.log(jumlah_kata(kalimat_1))
+console.log(jumlah_kata(kalimat_2))
