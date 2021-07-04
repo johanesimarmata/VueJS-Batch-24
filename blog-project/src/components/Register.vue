@@ -61,7 +61,7 @@ export default {
             password: '',
             currentPhoto: undefined,
             showPassword: false,
-            apiDomain: "http://demo-api-vue.sanbercloud.com"
+            apiDomain: "https://demo-api-vue.sanbercloud.com"
         }
     },
     methods:{

@@ -143,7 +143,7 @@ export default {
             },
             errorForm: [],
             currentPhoto: undefined,
-            apiDomain: 'http://demo-api-vue.sanbercloud.com'
+            apiDomain: 'https://demo-api-vue.sanbercloud.com'
         }
     },
     computed:{
@@ -156,10 +156,6 @@ export default {
         ...mapActions({
             setAlert : 'alert/set'
         }),
-        onChangeTitle(event){
-            event.preventDefault()
-            console.log(event.target.value)
-        },
         selectFile(photo){
             this.currentPhoto = photo
         },
@@ -237,8 +233,7 @@ export default {
                     text: 'Post has been deleted'
                 })
                 this.close()
-                this.$router.push('Blogs')
-                this.$router.go()
+                this.$router.go(this.$router.currentRoute)
 
             }).catch(() => {
                 this.setAlert({
@@ -264,7 +259,6 @@ export default {
                             'Authorization' : 'Bearer ' + this.token
                         }
                     }
-                    console.log(this.inputCreate.title)
                     this.axios(config).then(() => {
                         this.setAlert({
                             status: true,
@@ -272,8 +266,7 @@ export default {
                             text: 'Post has been created'
                         })
                         this.close()
-                        this.$router.push('Blogs')
-                        this.$router.go()
+                        this.$router.go(this.$router.currentRoute)
                     }).catch((err) => {
                         console.log(err)
                         this.setAlert({
@@ -304,8 +297,7 @@ export default {
                             text: 'Post has been updated'
                         })
                         this.close()
-                        this.$router.push('Blogs')
-                        this.$router.go()
+                        this.$router.go(this.$router.currentRoute)
                     }).catch((err) => {
                         console.log(err)
                         this.setAlert({
@@ -349,8 +341,7 @@ export default {
                     text: 'Photo Uploaded Succesfully!'
                 })
                 this.close()
-                this.$router.push('Blogs')
-                this.$router.go()
+                this.$router.go(this.$router.currentRoute)
             }).catch(() => {
                 this.setAlert({
                     status: true,

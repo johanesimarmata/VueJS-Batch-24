@@ -7,7 +7,7 @@
       <v-list>
         <v-list-item v-if="!guest">
           <v-list-item-avatar>
-            <v-img :src="user.photo_profile ? apiDomain + user.photo_profile : 'https://randomuser.me/api/portraits/men/78.jpg'"></v-img>
+            <v-img :src="user.photo_profile ? apiDomain + user.photo_profile : 'http://randomuser.me/api/portraits/men/78.jpg'"></v-img>
           </v-list-item-avatar>
           <v-list-item-content>
             <v-list-item-title>{{user.name}}</v-list-item-title>
@@ -90,7 +90,7 @@ export default {
       {title : 'Home', icon : 'mdi-home', route : '/'},
       {title : 'Blogs', icon : 'mdi-note', route : '/blogs'}
     ],
-    apiDomain: "http://demo-api-vue.sanbercloud.com"
+    apiDomain: "https://demo-api-vue.sanbercloud.com"
   }),
   computed:{
     ...mapGetters({

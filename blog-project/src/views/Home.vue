@@ -21,7 +21,7 @@ import {mapGetters, mapMutations} from 'vuex'
   export default {
     name: 'Home',
     data: () => ({
-      apiDomain: 'http://demo-api-vue.sanbercloud.com',
+      apiDomain: 'https://demo-api-vue.sanbercloud.com',
       blogs: [],
       multiLine: true,
       snackbar: true,
