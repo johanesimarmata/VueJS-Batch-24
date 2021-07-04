@@ -348,6 +348,7 @@ export default {
                     color: 'error',
                     text: 'Photo failed to be uploaded!'
                 })
+                this.close()
             });
         },
         close(){
