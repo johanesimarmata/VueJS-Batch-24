@@ -6,7 +6,7 @@
         rounded
         small
         v-if="token !== ''"
-        @click="createPost"
+        @click="createBlog"
       >
           Create Blog
           <v-icon>mdi-plus-circle-outline</v-icon>
@@ -56,7 +56,7 @@ import { mapActions, mapGetters } from 'vuex';
       ...mapActions({
         setDialogComponent : 'dialog/setComponent',
       }),
-      createPost(){
+      createBlog(){
         this.setDialogComponent({'component' : 'blog-form', 'params' : {
           status : 'create'
         }})

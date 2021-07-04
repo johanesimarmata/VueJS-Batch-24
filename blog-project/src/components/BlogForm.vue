@@ -100,11 +100,11 @@
         </v-card>
         <v-card v-if="params.status === 'delete'">
             <v-card-title class="text-h6">
-            Are you sure to delete the Post?
+            Do you want to delete this Blog?
             </v-card-title>
 
             <v-card-text>
-                If you click yes, you won't be see this post anymore.
+                If you click yes, you won't be see this Blog anymore.
             </v-card-text>
 
             <v-card-actions>
@@ -169,7 +169,7 @@ export default {
                     this.setAlert({
                         status: true,
                         color: 'error',
-                        text: `Post failed to ${this.params.status}! Title Minimum 5 Characters and Description Maximum 30 Characters`
+                        text: `Blog failed to ${this.params.status}! Title Minimum 5 Characters and Description Maximum 30 Characters`
                     })
                 }else if(this.inputCreate.title.length < 5){
                     this.errorForm.push("Title Minimum 5 Characters")
@@ -177,7 +177,7 @@ export default {
                     this.setAlert({
                         status: true,
                         color: 'error',
-                        text: `Post failed to ${this.params.status}! Title Minimum 5 Characters`
+                        text: `Blog failed to ${this.params.status}! Title Minimum 5 Characters`
                     }) 
                 }else if(this.inputCreate.description.length > 30){
                     this.errorForm.push("Description Maximum 30 Characters")
@@ -185,7 +185,7 @@ export default {
                     this.setAlert({
                         status: true,
                         color: 'error',
-                        text: `Post failed to ${this.params.status}! Description Maximum 30 Characters`
+                        text: `Blog failed to ${this.params.status}! Description Maximum 30 Characters`
                     })
                 }
             }else if(this.params.status === 'edit'){
@@ -196,7 +196,7 @@ export default {
                     this.setAlert({
                         status: true,
                         color: 'error',
-                        text: `Post failed to ${this.params.status}! Title Minimum 5 Characters and Description Maximum 30 Characters`
+                        text: `Blog failed to ${this.params.status}! Title Minimum 5 Characters and Description Maximum 30 Characters`
                     })
                 }else if(this.inputEdit.title.length < 5){
                     this.errorForm.push("Title Minimum 5 Characters")
@@ -204,7 +204,7 @@ export default {
                     this.setAlert({
                         status: true,
                         color: 'error',
-                        text: `Post failed to ${this.params.status}! Title Minimum 5 Characters`
+                        text: `Blog failed to ${this.params.status}! Title Minimum 5 Characters`
                     }) 
                 }else if(this.inputEdit.description.length > 30){
                     this.errorForm.push("Description Maximum 30 Characters")
@@ -212,7 +212,7 @@ export default {
                     this.setAlert({
                         status: true,
                         color: 'error',
-                        text: `Post failed to ${this.params.status}! Description Maximum 30 Characters`
+                        text: `Blog failed to ${this.params.status}! Description Maximum 30 Characters`
                     })
                 }
             }
@@ -230,7 +230,7 @@ export default {
                 this.setAlert({
                     status: true,
                     color: 'success',
-                    text: 'Post has been deleted'
+                    text: 'Blog has been deleted'
                 })
                 this.close()
                 this.$router.go(this.$router.currentRoute)
@@ -239,7 +239,7 @@ export default {
                 this.setAlert({
                     status: true,
                     color: 'error',
-                    text: 'Post has not deleted yet!'
+                    text: 'Blog has not deleted yet!'
                 })
                 this.close()
             });
@@ -263,7 +263,7 @@ export default {
                         this.setAlert({
                             status: true,
                             color: 'success',
-                            text: 'Post has been created'
+                            text: 'Blog has been created'
                         })
                         this.close()
                         this.$router.go(this.$router.currentRoute)
@@ -272,7 +272,7 @@ export default {
                         this.setAlert({
                             status: true,
                             color: 'error',
-                            text: 'Post failed to create!'
+                            text: 'Blog failed to create!'
                         })
                         this.close()
                     });
@@ -294,7 +294,7 @@ export default {
                         this.setAlert({
                             status: true,
                             color: 'success',
-                            text: 'Post has been updated'
+                            text: 'Blog has been updated'
                         })
                         this.close()
                         this.$router.go(this.$router.currentRoute)
@@ -303,7 +303,7 @@ export default {
                         this.setAlert({
                             status: true,
                             color: 'error',
-                            text: 'Post failed to update!'
+                            text: 'Blog failed to update!'
                         })
                         this.close()
                     });
