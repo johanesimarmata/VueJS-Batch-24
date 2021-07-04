@@ -1,5 +1,11 @@
 # blog-project
 
+### Deployment (Netlify)
+```
+https://johanesimarmata-blog-finalproject.netlify.app/
+```
+
+
 ### Demo Application (Youtube)
 ```
 https://www.youtube.com/watch?v=NWO391rsu18
